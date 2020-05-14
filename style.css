@@ -64,7 +64,11 @@ background:#a699b0;
 }
 
 .green{
-  background: #a5d2a3
+  background: #a5d2a3;
+}
+
+.green3{
+  background: #e4f1e3;
 }
 
 .pink{
@@ -75,23 +79,52 @@ background:#a699b0;
   background: #a699b0;
 }
 
+.purple3{
+  background: #d2ccd7;
+}
+
+.yellow2{
+  background: #fff3d0;
+}
+
+.yellow3{
+  background: #fff7e0;
+}
+
 .banner{
-  width: 600px;
-  height: 60px;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
 .imgsmall{
-  width: 167px;
-  height: 255px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 167px;
+  height: auto;
   margin-left: 12px;
   margin-top: 12px;
 }
 
+.addtocart{
+  width: 130px;
+  height: 47px;
+}
+
 .sidebar-module img{
-  width:220px;
+  display:block;
+  width: 100%;
+  max-width:220px;
   height:183px;
 }
 /* MAIN */
+
+.imgbig{
+  width: 298px;
+  height: 455px;
+}
 
 /* FOOTER */
 .container-footer-all{
@@ -108,64 +141,35 @@ background:#a699b0;
   justify-content: space-between;
 }
 
-.footer-column1 .footer-column2 .footer-column3 .footer-column4{
-  max-width: 200px;
+.btnyellow{
+  background: #ffd965;
 }
 
-.footer-column3 .row img{
+.btnyellow:hover{
+  background: #ccad50;
+}
+
+.nounderline {
+  text-decoration: none !important
+}
+.checkoutbtn{
+  background: #FFD965;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.sidebar-module ul li{
+  list-style: none;
+}
+
+.footericon{
   width:23px;
   height:23px;
 }
 
-.footer-column3 .row label{
-  margin-left: 10px;
-  font-size: 15px;
-}
-
-.footer-column4 img{
-  width: 200px;
-  height: 56px;
-}
-
-.container-footer{
-  width: 100%;
-  background-color: #94bd92;
-  color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-}
-
-.copyright{
-  margin-left:25px;
-}
-.container-footer a{
-  color: #ffffff;
-  text-decoration: none;
-  margin-left:10px;
-}
-
-.footer-column1 ul{
-  padding: 8px;
-  padding-inline-start: 1px;
-  list-style: none;
-  margin-left: 5px;
-}
-
-.footer-column2 ul{
-  padding: 8px;
-  padding-inline-start: 1px;
-  list-style: none;
-  margin-left: 5px;
-}
-
-.footer-column1 li{
-  padding: 4px;
-  list-style: none;
-  font-size: 15px;
-}
-
-.footer-column2 li{
-  padding: 4px;
-  list-style: none;
-  font-size: 15px;
+.footerimg{
+  width: 150px;
+  height: 42px;
 }

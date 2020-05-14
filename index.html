@@ -1,487 +1,1308 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
-    <title>Buybook.com</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <header class="blog-header py-3">
+  <link rel="stylesheet" href="style.css">
 
-      </header>
+  <title>Buybook.com</title>
+</head>
 
-      <nav class="navbar navbar-expand-md">
-        <button class="navbar-toggler navbar-custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md">
+      <button class="navbar-toggler navbar-custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <ion-icon name="menu-sharp"></ion-icon>
-        </button>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"><ion-icon name="home"></ion-icon>  Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><ion-icon name="information-circle"></ion-icon> Help</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><ion-icon name="log-in"></ion-icon>  Log In/Sign Up</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><ion-icon name="heart"></ion-icon>  Wish List</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><ion-icon name="compass"></ion-icon>   Orders</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><ion-icon name="cart"></ion-icon>  Cart (0) 49,99 €</a>
-            </li>
-            <li class="nav-item ml-2">
-              <select class="form-control-sm mt-1" id="">
-                    <option>English</option>
-                    <option>Español</option>
-                    <option>Català</option>
-                    <option>Portuguese</option>
-                    <option>Français</option>
-                    <option>Italiano</option>
-                  </select>
-            </li>
-            <li class="nav-item ml-2">
-              <select class="form-control-sm mt-1" id="formcurrency">
-                    <option>USD</option>
-                    <option>EUR</option>
-                  </select>
-            </li>
-          </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              <ion-icon name="home"></ion-icon> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <ion-icon name="information-circle"></ion-icon> Help
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">
+              <ion-icon name="log-in"></ion-icon> Log In/Sign Up
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wishlist.html">
+              <ion-icon name="heart"></ion-icon> Wish List
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders.html">
+              <ion-icon name="compass"></ion-icon> Orders
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">
+              <ion-icon name="cart"></ion-icon> Cart (3) 91,17 €
+            </a>
+          </li>
+          <li class="nav-item ml-2">
+            <select class="form-control-sm mt-1" id="">
+              <option>English</option>
+              <option>Español</option>
+              <option>Català</option>
+              <option>Portuguese</option>
+              <option>Français</option>
+              <option>Italiano</option>
+            </select>
+          </li>
+          <li class="nav-item ml-2">
+            <select class="form-control-sm mt-1" id="formcurrency">
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </li>
+        </ul>
 
-        </div>
-      </nav>
-
-      <div class="navbar">
-        <a class="navbar-brand" href="#"><img src="img/buybooklogo2.png"></a>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn my-2 my-sm-0 text-white" type="submit">Search</button>
-        </form>
       </div>
+    </nav>
 
-      <div class="navbar pink p-0 m-0">
-        <img src="img\25off.png" class="image-flex banner">
-      </div>
 
-      <div class="nav-scroller py-1">
-        <nav class="nav d-flex justify-content-start">
-          <a class="bar2 p-2" href="#">Home</a>
-          <a class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle bar2" data-toggle="dropdown">Categories</a>
-                    <div class="dropdown-menu">
-                      <a href="#" class="dropdown-item">Arts</a>
-                      <a href="#" class="dropdown-item">Astrology & Horoscope</a>
-                      <a href="#" class="dropdown-item">BestSellers</a>
-                      <a href="#" class="dropdown-item">Biography</a>
-                      <a href="#" class="dropdown-item">Children's Books</a>
-                      <a href="#" class="dropdown-item">Fiction</a>
-                      <a href="#" class="dropdown-item">Food & Drink</a>
-                      <a href="#" class="dropdown-item">History & Archaeology</a>
-                      <a href="#" class="dropdown-item">Photography</a>
-                      <a href="#" class="dropdown-item">Travel</a>
-                      <a href="#" class="dropdown-item">Thriller</a>
-                      <a href="#" class="dropdown-item">Young & Teen</a>
-                    </div>
-          </a>
-          <a class="bar2 p-2" href="#">BestSellers</a>
-          <a class="bar2 p-2" href="#">SALE</a>
-          <a class="bar2 p-2" href="#">New Releases</a>
-          <a class="bar2 p-2" href="#">Coming Soon</a>
-        </nav>
-      </div>
-
+    <div class="navbar">
+      <a class="navbar-brand" href="#"><img src="img/buybooklogo2.png"></a>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search by author / ISBN / category / keyword" aria-label="Search">
+        <button class="btn my-2 my-sm-0 text-white" type="submit">Search</button>
+      </form>
     </div>
 
-    <main role="main" class="container-fluid">
-      <div class="row">
-        <div class="col-md-9">
-          <div class="col-12 green py-2">
+    <div class="navbar pink p-0 m-0">
+      <img src="img\25off.png" class="image-flex banner">
+    </div>
+
+    <div class="nav-scroller py-1">
+      <nav class="nav d-flex justify-content-start">
+        <a class="bar2 p-2" href="index.html">Home</a>
+        <a class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle bar2" data-toggle="dropdown">Categories</a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Arts</a>
+            <a href="#" class="dropdown-item">Astrology & Horoscope</a>
+            <a href="#" class="dropdown-item">BestSellers</a>
+            <a href="#" class="dropdown-item">Biography</a>
+            <a href="#" class="dropdown-item">Children's Books</a>
+            <a href="#" class="dropdown-item">Fiction</a>
+            <a href="#" class="dropdown-item">Food & Drink</a>
+            <a href="#" class="dropdown-item">History & Archaeology</a>
+            <a href="#" class="dropdown-item">Photography</a>
+            <a href="#" class="dropdown-item">Travel</a>
+            <a href="#" class="dropdown-item">Thriller</a>
+            <a href="#" class="dropdown-item">Young & Teen</a>
+          </div>
+        </a>
+        <a class="bar2 p-2" href="#">BestSellers</a>
+        <a class="bar2 p-2" href="#">SALE</a>
+        <a class="bar2 p-2" href="#">New Releases</a>
+        <a class="bar2 p-2" href="#">Coming Soon</a>
+      </nav>
+    </div>
+
+  </div>
+
+  <main role="main" class="container-fluid">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="col-12 green py-3">
           <p class="ml-1 mt-2 text-justify">Welcome to BuyBook.com! We have more than 20 million titles and free delivery worldwide to over 170 countries. We also really, really love books.<br><br>
-          Looking for your new favourite book? Browse some of our top categories such as Crime & Thriller, Fiction, Graphic Novels, Food & Drink, Crafts & Hobbies, Art & Photography, Biography.</p>
-          </div>
+            Looking for your new favourite book? Browse some of our top categories such as Arts, Astrology & Horoscope, BestSellers, Biography or Children's Books.</p>
+        </div>
 
-          <div class="col-12 purple2">
-            <div class="row">
+        <div class="col-12 purple2">
+          <div class="row">
 
-              <div class="col-12 ml-3 mt-3">
-              <h4 class="text-white">Our book selection<h4>
-              </div>
-
-                <div class="col-xs-4 col-sm-6 col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Art / Painting</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9783836535632.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col-12 px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-text-blac">9783836535632</div>
-                      <strong class="d-inline-block mb-2 text-black">Wolfgang Büscher</strong>
-                      <h5 class="mb-0 text-blac">Neo Rauch</h5><br><br>
-                      <h4 class="mb-auto text-blac">49,99 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Art / Painting</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9783941847354.jpg" class="imgsmall image-flex">
-                    </div>
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9783941847354</div>
-                      <strong class="d-inline-block mb-2 text-black">Rudij Bergmann</strong>
-                      <h5 class="mb-0 text-black">Neo Rauch at Bötzow</h5><br>
-                      <h4 class="mb-auto text-black">30,04 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Art / Painting</h7>
-                    </div>
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9783775743815.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9783775743815</div>
-                      <strong class="d-inline-block mb-2 text-black">Hatje Cantz</strong>
-                      <h5 class="mb-0 text-black">Neo Rauch: Dromos</h5><br>
-                      <h4 class="mb-auto text-black">29,13 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Art / Painting</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9788360713518.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9788360713518</div>
-                      <strong class="d-inline-block mb-2 text-black">Neo Rauch</strong>
-                      <h5 class="mb-0 text-black">The Myth of realism</h5><br>
-                      <h4 class="mb-auto text-black">32,93 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Biography</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9788499894454.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9788499894454</div>
-                      <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
-                      <h5 class="mb-0 text-black">Eramos unos niños</h5><br>
-                      <h4 class="mb-auto text-black">16,90 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Biography</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9788466342223.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9788466342223</div>
-                      <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
-                      <h5 class="mb-0 text-black">M Train</h5><br><br>
-                      <h4 class="mb-auto text-black">20,90 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Biography</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9788426407740.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9788426407740</div>
-                      <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
-                      <h5 class="mb-0 text-black">El año del mono</h5> <br><br>
-                      <h4 class="mb-auto text-black">17,95 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Biography</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9788426406248.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9788426406248</div>
-                      <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
-                      <h5 class="mb-0 text-black">Augurios de Inocencia</h5><br>
-                      <h4 class="mb-auto text-black">13,20 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Biography</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9788499894454.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9788499894454</div>
-                      <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
-                      <h5 class="mb-0 text-black">Eramos unos niños</h5><br>
-                      <h4 class="mb-auto text-black">16,90 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Biography</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9788466342223.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9788466342223</div>
-                      <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
-                      <h5 class="mb-0 text-black">M Train</h5><br><br>
-                      <h4 class="mb-auto text-black">20,90 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Biography</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9788426407740.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9788426407740</div>
-                      <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
-                      <h5 class="mb-0 text-black">El año del mono</h5> <br><br>
-                      <h4 class="mb-auto text-black">17,95 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-                  <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-
-                    <div class="col-12 ml-3 mt-3">
-                      <h7 class="text-white">Biography</h7>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column position-static">
-                      <img src="img/9788426406248.jpg" class="imgsmall image-flex">
-                    </div>
-
-                    <div class="col px-3 py-2 d-flex flex-column position-static">
-                      <div class="mb-1 text-black">9788426406248</div>
-                      <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
-                      <h5 class="mb-0 text-black">Augurios de Inocencia</h5><br>
-                      <h4 class="mb-auto text-black">13,20 €</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-
+            <div class="col-12 ml-3 mt-3">
+              <h3 class="text-white">Our book selection<h3>
             </div>
-          </div>
+            <!-- arts & painting -->
+            <div class="col-xs-4 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
 
-
-
-        </div><!-- /.blog-main -->
-
-        <aside class="col-md-3 blog-sidebar">
-
-          <div class="sidebar-module mt-2">
-            <h6>SHIPPING UPDATES</h6>
-                <img src="img\covid19updates.png" class="imageaside">
-          </div>
-
-          <div class="sidebar-module mt-2">
-                <h6>STAY AT HOME</h6>
-                <img src="img\AtHome.png" class="imageaside">
-          </div>
-
-          <div class="sidebar-module mt-2">
-                <h6>ASTROLOGY (NEW)</h6>
-                <img src="img\astrology.png" class="imageaside">
-          </div>
-
-          <div class="sidebar-module mt-2">
-                <h6>TRAVEL BOOKS</h6>
-                <img src="img\travelbooks.png" class="imageaside">
-          </div>
-
-          <div class="sidebar-module mt-2">
-                <h6>FOLLOW US</h6>
-                <img src="img\socialmedia.png" class="imageaside">
-          </div>
-        </aside><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
-
-    </main><!-- /.container -->
-
-    <footer>
-        <div class="container-footer-all">
-          <div class="container-body">
-              <div class="footer-column1 w-25">
-                <h6>BUYBOOK.COM</h6>
-                <ul>
-                  <li>About us</li>
-                  <li>Contact Us</li>
-                  <li>History</li>
-                  <li>Join us</li>
-                </ul>
-              </div>
-
-              <div class="footer-column2 w-25">
-                <h6>HELP</h6>
-                  <ul>
-                  <li>Sign In - Sign Up</li>
-                  <li>Help Center - FAQs</li>
-                  <li>Order Status</li>
-                  <li>Privacy Policy & Cookies</li>
-                  </ul>
-              </div>
-
-              <div class="footer-column3 w-25">
-                <h6>FOLLOW US</h6>
-                  <div class="row my-3">
-                    <img src="img\insta.png" alt="">
-                    <label for="">Instagram @buybook</label>
-                  </div>
-
-                  <div class="row my-3">
-                    <img src="img\face.png" alt="">
-                    <label for="">Facebook "Buy Book"</label>
-                  </div>
-
-                  <div class="row my-3">
-                    <img src="img\twit.png" alt="" type="img">
-                    <label for="">Twitter @buybook</label>
-                  </div>
-              </div>
-
-              <div class="footer-column4 w-25">
-                <h6>SUBSCRIBE</h6>
-                <div class="form-inline w-100 my-3">
-                  <input class="form-control w-75 " type="search" placeholder="Email address" aria-label="Submit"><button class="btn text-white btnfooter w-25" type="submit">JOIN</button>
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Arts / Painting</h7>
                 </div>
-                <div>
-                <h6>PAYMENT METHODS</h6>
-                <img src="img\paymentmethod2.png">
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <a href="item9783836535632.html">
+                    <img src="img/9783836535632.jpg" class="imgsmall image-flex"></a>
                 </div>
+
+                <div class="col-12 px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-text-blac">9783836535632</div>
+                  <strong class="d-inline-block mb-2 text-black">Wolfgang Büscher</strong>
+                  <h5 class="mb-0 text-blac">Neo Rauch</h5><br>
+                  <h4 class="mb-auto text-black">49,99 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
               </div>
-
-
-          </div>
-
-          <div class="container-footer">
-            <div class="copyright">
-              Copyright © 2020 BuyBook.com All rights reserved | <a href="#">andresgarciabenito</a>
             </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Arts / Painting</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9783941847354.jpg" class="imgsmall image-flex">
+                </div>
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-2 text-black">9783941847354</div>
+                  <strong class="d-inline-block mb-2 text-black">Rudij Bergmann</strong>
+                  <h5 class="mb-2 text-black">Neo Rauch at Bötzow</h5>
+                  <h4 class="mb-auto text-black">30,04 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-2" source src="img\AddToCart.png" type="img"></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Arts / Painting</h7>
+                </div>
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9783775743815.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-2 text-black">9783775743815</div>
+                  <strong class="d-inline-block mb-2 text-black">Hatje Cantz</strong>
+                  <h5 class="mb-2 text-black">Neo Rauch: Dromos</h5>
+                  <h4 class="mb-auto text-black">29,13 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-2" source src="img\AddToCart.png" type="img"></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Arts / Painting</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788360713518.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-2 text-black">9788360713518</div>
+                  <strong class="d-inline-block mb-2 text-black">Neo Rauch</strong>
+                  <h5 class="mb-2 text-black">The Myth of realism</h5>
+                  <h4 class="mb-auto text-black">32,93 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-2" source src="img\AddToCart.png" type="img"></a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Astrology & Horoscope -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Astrology & Horoscope</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781611805116.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781611805116</div>
+                  <strong class="d-inline-block mb-2 text-black">Juliana McCarthy</strong>
+                  <h5 class="mb-0 text-black">The Stars Within You</h5><br><br>
+                  <h4 class="mb-auto text-black">19,99 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Astrology & Horoscope</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781578636563.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781578636563</div>
+                  <strong class="d-inline-block mb-2 text-black">Theresa Reed</strong>
+                  <h5 class="mb-0 text-black">Astrology for Real Life</h5><br><br>
+                  <h4 class="mb-auto text-black">16,53 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Astrology & Horoscope</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781787132245.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781787132245</div>
+                  <strong class="d-inline-block mb-2 text-black">Vanessa Montgomery</strong>
+                  <h5 class="mb-0 text-black">Star Power: A Simple Guide to Astrology</h5><br>
+                  <h4 class="mb-auto text-black">19,99 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Astrology & Horoscope</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781507207826.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781507207826</div>
+                  <strong class="d-inline-block mb-2 text-black">Mecca Woods</strong>
+                  <h5 class="mb-0 text-black">Astrology for Happiness and Success</h5><br>
+                  <h4 class="mb-auto text-black">13,22 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- BestSellers -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">BestSellers</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781529029581.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781529029581</div>
+                  <strong class="d-inline-block mb-2 text-black">Toshikazu Kawaguchi</strong>
+                  <h5 class="mb-0 text-black">Before the Coffee Gets Cold</h5><br><br>
+                  <h4 class="mb-auto text-black">11,88 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">BestSellers</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9780571333134.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9780571333134</div>
+                  <strong class="d-inline-block mb-2 text-black">Sally Rooney</strong>
+                  <h5 class="mb-0 text-black">Conversations with friends</h5><br><br>
+                  <h4 class="mb-auto text-black">20,04 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">BestSellers</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781724449139.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781724449139</div>
+                  <strong class="d-inline-block mb-2 text-black">Marco Caspani</strong>
+                  <h5 class="mb-0 text-black">Crossfit Guide: The Ultimate Guide</h5><br>
+                  <h4 class="mb-auto text-black">19,09 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">BestSellers</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788490653500.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788490653500</div>
+                  <strong class="d-inline-block mb-2 text-black">Celeste Ng</strong>
+                  <h5 class="mb-0 text-black">Pequeños fuegos por todas partes</h5><br><br>
+                  <h4 class="mb-auto text-black">19,50 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Biography -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Biography</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788499894454.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788499894454</div>
+                  <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
+                  <h5 class="mb-0 text-black">Eramos unos niños</h5><br>
+                  <h4 class="mb-auto text-black">16,90 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Biography</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788466342223.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788466342223</div>
+                  <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
+                  <h5 class="mb-0 text-black">M Train</h5><br><br>
+                  <h4 class="mb-auto text-black">20,90 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Biography</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788426407740.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788426407740</div>
+                  <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
+                  <h5 class="mb-0 text-black">El año del mono</h5> <br><br>
+                  <h4 class="mb-auto text-black">17,95 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Biography</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788426406248.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788426406248</div>
+                  <strong class="d-inline-block mb-2 text-black">Patti Smith</strong>
+                  <h5 class="mb-0 text-black">Augurios de Inocencia</h5><br>
+                  <h4 class="mb-auto text-black">13,20 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Children's Books -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Children's Books</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9780679886525.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9780679886525</div>
+                  <strong class="d-inline-block mb-2 text-black">Stan Berenstain</strong>
+                  <h5 class="mb-0 text-black">Big Book of Science and Nature</h5><br>
+                  <h4 class="mb-auto text-black">33,13 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Children's Books</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781406338539.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781406338539</div>
+                  <strong class="d-inline-block mb-2 text-black">Jon Klassen</strong>
+                  <h5 class="mb-0 text-black">I want my hat back</h5><br><br>
+                  <h4 class="mb-auto text-black">12,33 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Children's Books</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9780307168030.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9780307168030</div>
+                  <strong class="d-inline-block mb-2 text-black">Richard Scarry</strong>
+                  <h5 class="mb-0 text-black">Busy, Busy Town</h5> <br><br> <br>
+
+                  <h4 class="mb-auto text-black">15,99 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Children's Books</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9780008158286.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9780008158286</div>
+                  <strong class="d-inline-block mb-2 text-black">Sara Pennypacker</strong>
+                  <h5 class="mb-0 text-black">Pax</h5><br><br><br>
+                  <h4 class="mb-auto text-black">16,00 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Fiction / Harry Potter -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Fiction / Harry Potter</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788498382662.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788498382662</div>
+                  <strong class="d-inline-block mb-2 text-black">J.K. Rowling</strong>
+                  <h5 class="mb-0 text-black">Harry Potter y la Piedra Filosofal</h5><br><br>
+                  <h4 class="mb-auto text-black">14,25 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Fiction / Harry Potter</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788498382679.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788498382679</div>
+                  <strong class="d-inline-block mb-2 text-black">J.K. Rowling</strong>
+                  <h5 class="mb-0 text-black">Harry Potter y la Cámara Secreta</h5><br><br>
+                  <h4 class="mb-auto text-black">15,20 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Fiction / Harry Potter</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788498383430.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788498383430</div>
+                  <strong class="d-inline-block mb-2 text-black">Richard Scarry</strong>
+                  <h5 class="mb-0 text-black">Harry Potter y el Prisionero de Azkaban</h5> <br>
+
+                  <h4 class="mb-auto text-black">14,25 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Fiction / Harry Potter</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788418173110.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788418173110</div>
+                  <strong class="d-inline-block mb-2 text-black">Sara Pennypacker</strong>
+                  <h5 class="mb-0 text-black">Harry Potter y el Cáliz de Fuego</h5><br><br>
+                  <h4 class="mb-auto text-black">12,35 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Food & Drink -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Food & Drink</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781784722647.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781784722647</div>
+                  <strong class="d-inline-block mb-2 text-black">Diana Henry</strong>
+                  <h5 class="mb-0 text-black">How to eat a peach</h5><br>
+                  <h4 class="mb-auto text-black">30,13 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Food & Drink</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781911621294.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781911621294</div>
+                  <strong class="d-inline-block mb-2 text-black">Elizabeth David</strong>
+                  <h5 class="mb-0 text-black">Italian Food</h5><br><br>
+                  <h4 class="mb-auto text-black">16,39 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Food & Drink</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9780761168119.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9780761168119</div>
+                  <strong class="d-inline-block mb-2 text-black">Jeff Alworth</strong>
+                  <h5 class="mb-0 text-black">Beer Bible</h5><br><br>
+
+                  <h4 class="mb-auto text-black">14,25 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Food & Drink</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781549726040.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781549726040</div>
+                  <strong class="d-inline-block mb-2 text-black">Jessica Simms</strong>
+                  <h5 class="mb-0 text-black">I know Coffee</h5><br><br>
+                  <h4 class="mb-auto text-black">12,35 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- History & Archaeology -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">History & Archaeology</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781250030115.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781250030115</div>
+                  <strong class="d-inline-block mb-2 text-black">John Romer</strong>
+                  <h5 class="mb-0 text-black">A History of Ancient Egypt</h5><br><br>
+                  <h4 class="mb-auto text-black">37,91 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">History & Archaeology</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788432311451.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788432311451</div>
+                  <strong class="d-inline-block mb-2 text-black">Eduardo Galeano</strong>
+                  <h5 class="mb-0 text-black">Las venas abiertas de América Latina</h5><br><br>
+                  <h4 class="mb-auto text-black">54,14 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">History & Archaeology</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9789384082185.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9789384082185</div>
+                  <strong class="d-inline-block mb-2 text-black">Iqtidar Husain Siddiqui</strong>
+                  <h5 class="mb-0 text-black">Indo-Persian Historiography</h5> <br><br>
+                  <h4 class="mb-auto text-black">26,11 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">History & Archaeology</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781538137840.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781538137840</div>
+                  <strong class="d-inline-block mb-2 text-black">John W. Sherman</strong>
+                  <h5 class="mb-0 text-black">Mexico: A Concise Illustrated History</h5><br><br>
+                  <h4 class="mb-auto text-black">31,10  €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- Photography -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Photography</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781579656478.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781579656478</div>
+                  <strong class="d-inline-block mb-2 text-black">John Derian</strong>
+                  <h5 class="mb-0 text-black">John Derian Picture Book</h5><br>
+                  <h4 class="mb-auto text-black">69,49  €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Photography</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9783836538725.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9783836538725</div>
+                  <strong class="d-inline-block mb-2 text-black">Sebastião Salgado</strong>
+                  <h5 class="mb-0 text-black">Genesis</h5><br><br>
+                  <h4 class="mb-auto text-black">55,44 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Photography</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9780300172379.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9780300172379</div>
+                  <strong class="d-inline-block mb-2 text-black">Nina Rappaport</strong>
+                  <h5 class="mb-0 text-black">Ezra Stoller, Photographer</h5> <br>
+
+                  <h4 class="mb-auto text-black">48,95 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Photography</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781846149429.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781846149429</div>
+                  <strong class="d-inline-block mb-2 text-black">Hoxton Mini Press</strong>
+                  <h5 class="mb-0 text-black">Really Good Dog Photography</h5><br>
+                  <h4 class="mb-auto text-black">32,43  €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- Travel -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Travel</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781787014176.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781787014176</div>
+                  <strong class="d-inline-block mb-2 text-black">Oliver Berry</strong>
+                  <h5 class="mb-0 text-black">Epic hikes of the World (Lonely Planet)</h5><br>
+                  <h4 class="mb-auto text-black">35,19  €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Travel</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781787011335.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781787011335</div>
+                  <strong class="d-inline-block mb-2 text-black">Lonely Planet</strong>
+                  <h5 class="mb-0 text-black">The Solo Travel Handbook</h5><br><br>
+                  <h4 class="mb-auto text-black">14,04 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Travel</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781786578648.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781786578648</div>
+                  <strong class="d-inline-block mb-2 text-black">Oliver Berry</strong>
+                  <h5 class="mb-0 text-black">Epic drives of the world (Lonely Planet)</h5> <br>
+
+                  <h4 class="mb-auto text-black">22,74 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Travel</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781788681292.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781788681292</div>
+                  <strong class="d-inline-block mb-2 text-black">Lonely Planet</strong>
+                  <h5 class="mb-0 text-black">The Big Trip</h5><br><br><br>
+                  <h4 class="mb-auto text-black">25,57 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- Thriller -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Thriller</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788433998064.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788433998064</div>
+                  <strong class="d-inline-block mb-2 text-black">Mariana Enriquez</strong>
+                  <h5 class="mb-0 text-black">Las cosas que perdimos en el fuego</h5><br><br>
+                  <h4 class="mb-auto text-black">22,50 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Thriller</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788433998248.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788433998248</div>
+                  <strong class="d-inline-block mb-2 text-black">Mariana Enriquez</strong>
+                  <h5 class="mb-0 text-black">Los peligros de fumar en la cama</h5><br><br>
+                  <h4 class="mb-auto text-black">21,60 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Thriller</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9788433998859.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9788433998859</div>
+                  <strong class="d-inline-block mb-2 text-black">Mariana Enriquez</strong>
+                  <h5 class="mb-0 text-black">Nuestra parte de noche</h5><br><br>
+
+                  <h4 class="mb-auto text-black">21,75  €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Thriller</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9780451495112.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9780451495112</div>
+                  <strong class="d-inline-block mb-2 text-black">Mariana Enriquez</strong>
+                  <h5 class="mb-0 text-black">Things we lost in the fire</h5><br><br>
+                  <h4 class="mb-auto text-black">21,14 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- Young & Teen -->
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Young & Teen</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781250059314.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781250059314</div>
+                  <strong class="d-inline-block mb-2 text-black">Stephanie Perkins</strong>
+                  <h5 class="mb-0 text-black">My True Love Gave to Me</h5><br><br>
+                  <h4 class="mb-auto text-black">12,78  €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Young & Teen</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781444952773.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781444952773</div>
+                  <strong class="d-inline-block mb-2 text-black">Alice Oseman</strong>
+                  <h5 class="mb-0 text-black">Heartstopper Volume Three</h5><br><br>
+                  <h4 class="mb-auto text-black">14,49 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6  col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Young & Teen</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9780008244125.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9780008244125</div>
+                  <strong class="d-inline-block mb-2 text-black">Alice Oseman</strong>
+                  <h5 class="mb-0 text-black">Loveless</h5> <br> <br><br>
+
+                  <h4 class="mb-auto text-black">14,25 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                <div class="col-12 ml-3 mt-3">
+                  <h7 class="text-white">Young & Teen</h7>
+                </div>
+
+                <div class="col-12 d-flex flex-column position-static">
+                  <img src="img/9781409157250.jpg" class="imgsmall image-flex">
+                </div>
+
+                <div class="col px-3 pt-2 d-flex flex-column position-static">
+                  <div class="mb-1 text-black">9781409157250</div>
+                  <strong class="d-inline-block mb-2 text-black">Rainbow Rowell</strong>
+                  <h5 class="mb-0 text-black">Eleanor & Park</h5><br><br><br>
+                  <h4 class="mb-auto text-black">12,35 €</h4>
+                  <a href="#"><img class="addtocart ml-3 mt-3 mb-0" source src="img\AddToCart.png" type="img"></a><br>
+                </div>
+
+              </div>
+            </div>
+
+
           </div>
+        </div>
+
+
+
+      </div><!-- /.blog-main -->
+
+      <aside class="d-none d-md-block col-md-3 blog-sidebar">
+
+        <div class="sidebar-module mt-2">
+          <h6>SHIPPING UPDATES</h6>
+          <img src="img\covid19updates.png" class="imageaside">
+
+        </div>
+
+        <div class="sidebar-module mt-2">
+          <h6>STAY AT HOME</h6>
+          <img src="img\AtHome.png" class="imageaside">
+        </div>
+
+        <div class="sidebar-module mt-2">
+          <h6>ASTROLOGY (NEW)</h6>
+          <img src="img\astrology.png" class="imageaside">
+        </div>
+
+        <div class="sidebar-module mt-2">
+          <h6>TRAVEL BOOKS</h6>
+          <img src="img\travelbooks.png" class="imageaside">
+        </div>
+
+        <div class="sidebar-module mt-2">
+          <h6>FOLLOW US</h6>
+          <img src="img\socialmedia.png" class="imageaside">
+        </div>
+      </aside><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+
+  </main><!-- /.container -->
+
+  <footer class="container-fluid green py-4">
+    <div class="row green mx-5">
+      <div class="col-6 col-md">
+        <h5>BUYBOOK.COM</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">About us</a></li>
+          <li><a class="text-muted" href="#">Contact Us</a></li>
+          <li><a class="text-muted" href="#">History</a></li>
+          <li><a class="text-muted" href="#">Join us</a></li>
+        </ul>
       </div>
-    </footer>
+      <div class="col-6 col-md">
+        <h5>HELP</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Sign In - Sign Up</a></li>
+          <li><a class="text-muted" href="#">Help Center</a></li>
+          <li><a class="text-muted" href="#">Order Status</a></li>
+          <li><a class="text-muted" href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>FOLLOW US</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#"><img class="footericon mr-2" src="img\insta.png" alt="">@buybook</a></li>
+          <li><a class="text-muted" href="#"><img class="footericon mr-2" src="img\face.png" alt="">"BuyBook Store"</a></li>
+          <li><a class="text-muted" href="#"><img class="footericon mr-2" src="img\twit.png" alt="" type="img">@buybook</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h6>SUBSCRIBE</h6>
+        <div class="form-inline w-100 my-2">
+          <input class="form-control w-75 " type="search" placeholder="Email address" aria-label="Submit"><button class="btn text-white btnfooter w-25" type="submit">JOIN</button>
+        </div>
+        <hr>
+        <h6>PAYMENT METHODS</h6>
+        <img class="footerimg" src="img\paymentmethod2.png">
+      </div>
+      <div class="col-12">
+        <small class="d-block mb-3 text-muted">© 2020 BuyBook.com All rights reserved</small>
+      </div>
+    </div>
+  </footer>
 
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
 </html>
