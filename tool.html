@@ -19,81 +19,67 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-md">
-      <button class="navbar-toggler navbar-custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <ion-icon name="menu-sharp"></ion-icon>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-              <ion-icon name="home"></ion-icon> Home
-            </a>
+  <nav class="navbar navbar-expand-md purple justify-content-center navbar-dark">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+        <ul class="navbar-nav justify-content-center mr-auto">
+          <li class="nav-item active ">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <ion-icon name="information-circle"></ion-icon> Help
-            </a>
+            <a class="nav-link" href="#">Help</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">
-              <ion-icon name="log-in"></ion-icon> Log In/Sign Up
-            </a>
+            <a class="nav-link" href="login.html">Log In</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="wishlist.html">
-              <ion-icon name="heart"></ion-icon> Wish List
-            </a>
+            <a class="nav-link" href="login.html">Sign In</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="orders.html">
-              <ion-icon name="compass"></ion-icon> Orders
-            </a>
+            <a class="nav-link" href="wishlist.html">Wishlist</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cart.html">
-              <ion-icon name="cart"></ion-icon> Cart (3) 91,17 €
-            </a>
+            <a class="nav-link" href="orders.html">Orders</a>
           </li>
-          <li class="nav-item ml-2">
-            <select class="form-control-sm mt-1" id="">
-              <option>English</option>
-              <option>Español</option>
-              <option>Català</option>
-              <option>Portuguese</option>
-              <option>Français</option>
-              <option>Italiano</option>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html" tabindex="-1" aria-disabled="true">Cart (3)</a>
+          </li>
+          <li class="nav-item ml-2 mt-1">
+            <select class="custom-select custom-select-sm purple text-white">
+              <option selected>English</option>
+              <option value="2">Español</option>
+              <option value="3">Català</option>
+              <option value="3">Portuguese</option>
+              <option value="3">Français</option>
+              <option value="3">Italiano</option>
             </select>
           </li>
-          <li class="nav-item ml-2">
-            <select class="form-control-sm mt-1" id="formcurrency">
-              <option>USD</option>
-              <option>EUR</option>
+          <li class="nav-item ml-2 mt-1">
+            <select class="custom-select custom-select-sm purple text-white">
+              <option selected>EUR</option>
+              <option value="2">USD</option>
             </select>
           </li>
         </ul>
-
+        <form class="form-inline mt-2 mt-md-0 mr-0">
+            <input class="form-control mr-sm-0" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </nav>
 
-    <div class="navbar">
+    <nav class="navbar purple justify-content-start">
       <a class="navbar-brand" href="#"><img src="img/buybooklogo2.png"></a>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search by author / ISBN / category / keyword" aria-label="Search">
-        <button class="btn my-2 my-sm-0 text-white" type="submit">Search</button>
-      </form>
-    </div>
+      <a href="myaccount.html" class="btn purple text-light">Welcome, <span class="badge badge-light">username</span></a>
+    </nav>
 
-    <div class="navbar pink p-0 m-0">
-      <img src="img\25off.png" class="image-flex banner">
-    </div>
-
-    <div class="nav-scroller py-1">
+  <div class="yellow nav-scroller py-1">
+    <div class="container">
       <nav class="nav d-flex justify-content-start">
-        <a class="bar2 p-2" href="index.html">Home</a>
-        <a class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle bar2" data-toggle="dropdown">Categories</a>
+        <a class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle bar2"
+            data-toggle="dropdown">Categories</a>
           <div class="dropdown-menu">
             <a href="#" class="dropdown-item">Arts</a>
             <a href="#" class="dropdown-item">Astrology & Horoscope</a>
@@ -112,10 +98,9 @@
         <a class="bar2 p-2" href="#">BestSellers</a>
         <a class="bar2 p-2" href="#">SALE</a>
         <a class="bar2 p-2" href="#">New Releases</a>
-        <a class="bar2 p-2" href="#">Coming Soon</a>
+        <a class="bar2 p-2" href="#">Coming soon</a>
       </nav>
     </div>
-
   </div>
 
   <main role="main" class="container-fluid">
@@ -431,49 +416,43 @@
 
   </main><!-- /.container -->
 
-  <footer class="container-fluid green py-4">
+  <footer class="container-fluid green py-3">
     <div class="row green mx-5">
       <div class="col-6 col-md">
-        <h5>BUYBOOK.COM</h5>
+        <h5 class="text-dark">BUYBOOK.COM</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">About us</a></li>
-          <li><a class="text-muted" href="#">Contact Us</a></li>
-          <li><a class="text-muted" href="#">History</a></li>
-          <li><a class="text-muted" href="#">Join us</a></li>
+          <li><a class="text-dark" href="#">About us</a></li>
+          <li><a class="text-dark" href="#">Contact Us</a></li>
+          <li><a class="text-dark" href="#">History</a></li>
+          <li><a class="text-dark" href="#">Join us</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>HELP</h5>
+        <h5 class="text-dark">HELP</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Sign In - Sign Up</a></li>
-          <li><a class="text-muted" href="#">Help Center</a></li>
-          <li><a class="text-muted" href="#">Order Status</a></li>
-          <li><a class="text-muted" href="#">Privacy Policy</a></li>
+          <li><a class="text-dark" href="#">Log In - Sign Up</a></li>
+          <li><a class="text-dark" href="#">Help</a></li>
+          <li><a class="text-dark" href="#">Orders</a></li>
+          <li><a class="text-dark" href="#">Privacy Policy</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>FOLLOW US</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#"><img class="footericon mr-2" src="img\insta.png" alt="">@buybook</a></li>
-          <li><a class="text-muted" href="#"><img class="footericon mr-2" src="img\face.png" alt="">"BuyBook Store"</a></li>
-          <li><a class="text-muted" href="#"><img class="footericon mr-2" src="img\twit.png" alt="" type="img">@buybook</a></li>
+        <h5 class="text-dark">FOLLOW US</h5>
+        <ul class="list-unstyled">
+          <li><a class="text-dark" href="#"><img class="footericon mr-2" src="img\insta.png" alt="">@buybook</a></li>
+          <li><a class="text-dark" href="#"><img class="footericon mr-2" src="img\face.png" alt="">"BuyBook Store"</a></li>
+          <li><a class="text-dark" href="#"><img class="footericon mr-2" src="img\twit.png" alt="" type="img">@buybook</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h6>SUBSCRIBE</h6>
-        <div class="form-inline w-100 my-2">
-          <input class="form-control w-75 " type="search" placeholder="Email address" aria-label="Submit"><button class="btn text-white btnfooter w-25" type="submit">JOIN</button>
+        <h5 class="text-dark">SUBSCRIBE</h5>
+        <div class="form-inline w-100 mt-2 mb-4">
+          <input class="form-control w-75" type="search" placeholder="Email address" aria-label="Submit"><button class="btn btngreen btn-outline-light text-white btnfooter w-25" type="submit">JOIN</button>
         </div>
-        <hr>
-        <h6>PAYMENT METHODS</h6>
-        <img class="footerimg" src="img\paymentmethod2.png">
-      </div>
-      <div class="col-12">
-        <small class="d-block mb-3 text-muted">© 2020 BuyBook.com All rights reserved</small>
+        <small class="d-block mb-3 text-white">© 2020 BuyBook.com All rights reserved</small>
       </div>
     </div>
   </footer>
-
 
 
   <!-- Optional JavaScript -->

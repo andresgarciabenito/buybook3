@@ -6,8 +6,8 @@
 /* DIV */
 /* imagen del logo */
 img{
-  width: 300px;
-  height: 75px;
+  width: 200px;
+  height: 50px;
 }
 
 .navbar{
@@ -33,9 +33,13 @@ img{
 
 .navbar-toggler:focus{outline: none;}
 
-.nav-scroller{
-  background: #FFD965;
+.yellow{
+  background: #ffd965;
   color: #ffffff;
+}
+
+.yellow2{
+  background: #ffe493;
 }
 
 .dropdown-menu{
@@ -71,8 +75,8 @@ background:#a699b0;
   background: #e4f1e3;
 }
 
-.pink{
-  background: #FF927C;
+.purple {
+  background: #806E8E;
 }
 
 .purple2{
@@ -83,6 +87,10 @@ background:#a699b0;
   background: #d2ccd7;
 }
 
+.purplelight{
+  background: #c9c1cf;
+}
+
 .yellow2{
   background: #fff3d0;
 }
@@ -91,10 +99,15 @@ background:#a699b0;
   background: #fff7e0;
 }
 
+.pink{
+  background:#ff927c;
+
+}
+
 .banner{
   display: block;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
 }
 
@@ -102,10 +115,10 @@ background:#a699b0;
   display: block;
   width: 100%;
   height: 100%;
-  max-width: 167px;
+  max-width: 165px;
   height: auto;
-  margin-left: 12px;
-  margin-top: 12px;
+  margin-left: 5px;
+  margin-top: 10px;
 }
 
 .addtocart{
@@ -117,7 +130,7 @@ background:#a699b0;
   display:block;
   width: 100%;
   max-width:220px;
-  height:183px;
+  height: auto;
 }
 /* MAIN */
 
@@ -126,20 +139,6 @@ background:#a699b0;
   height: 455px;
 }
 
-/* FOOTER */
-.container-footer-all{
-  width:100%;
-  max-width: auto;
-  padding: 10px;
-  background: #a5d2a3;
-}
-.container-body{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 30px;
-  display:flex;
-  justify-content: space-between;
-}
 
 .btnyellow{
   background: #ffd965;
@@ -164,6 +163,9 @@ background:#a699b0;
   list-style: none;
 }
 
+.btngreen:hover{
+  background:#84a882;
+}
 .footericon{
   width:23px;
   height:23px;
