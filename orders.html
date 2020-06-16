@@ -35,7 +35,7 @@
             <a class="nav-link" href="login.html">Log In</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Sign In</a>
+            <a class="nav-link" href="login.html">Sign Up</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="wishlist.html">Wishlist</a>
@@ -63,9 +63,10 @@
             </select>
           </li>
         </ul>
-        <form class="form-inline mt-2 mt-md-0 mr-0">
-            <input class="form-control mr-sm-0" type="text" placeholder="Search" aria-label="Search">
+        <form class="form-inline mt-2 mt-md-0 mr-0" id="searchId">
+            <input class="form-control mr-sm-0" type="text" placeholder="Search" aria-label="Search" id="searchThis">
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            <div class="invalid-search" id="errorSearch"></div>
         </form>
       </div>
     </nav>
